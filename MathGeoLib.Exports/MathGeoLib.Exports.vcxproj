@@ -79,6 +79,8 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir).bin\$(PlatformTarget)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir).obj\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\MathGeoLib\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\Users\Chris\Space Reef Game\Assets\MathGeoLib.Exports\MathGeoLib.Managed.App\bin\x64\Debug;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -118,6 +120,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)..\MathGeoLib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
